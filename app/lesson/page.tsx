@@ -18,7 +18,7 @@ const LessonPage = async () => {
         redirect("/learn");
     }
 
-    const initialLessonChallenges =lesson.challenges
+    const initialLessonChallenges = lesson.challenges
     .filter((challenge) => challenge.completed)
     .length / lesson.challenges.length * 100;
 

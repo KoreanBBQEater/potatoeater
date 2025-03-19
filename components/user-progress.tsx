@@ -18,13 +18,13 @@ export const UserProgress = ({
     hasActiveSubscription
 }:Props) => {
     return(
-        <div className="flex items-center justify-between gap-x-2 w-full" >
+        <div className="flex items-center justify-between gap-x-2 w-full bg-[#1E1E1E] p-2 rounded-lg" >
             <Link href="/courses">
-                <Button variant="ghost">
+                <Button variant="ghost" className="text-white">
                     <Image 
                         src={activeCourse.imageSrc}
                         alt={activeCourse.title}
-                        className="rounded-md border"
+                        className="rounded-md border border-[#303030]"
                         width={32}
                         height={32}
                     />

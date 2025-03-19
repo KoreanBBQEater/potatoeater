@@ -9,19 +9,19 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        locked: "bg-neutral-300 text-primary-foreground hover:bg-neutral-200/90 border-neutral-400 border-b-4 active:border-b-0",
-        default: "bg-white text-slate-500 border-slate-300 border-2 border-b-4 active:border-b-2 hover:bg-black/11 ",
-        primary: "bg-sky-400 text-primary-foreground hover:bg-sky-400/90 border-sky-500 border-b-4 active:border-b-0",
-        primaryOutline: "bg-white text-sky-500 hover:bg-slate-300",
-        secondary:"bg-green-500 text-primary-foreground hover:bg-green-500/90 border-green-600 border-b-4 active:border-b-0",
-        secondaryOutline: "bg-white text-green-500 hover:bg-slate-300",
-        danger: "bg-rose-500 text-primary-foreground hover:bg-rose-500/90 border-rose-700 border-b-4 active:border-b-0",
-        dangerOutline: "bg-white text-rose-500 hover:bg-slate-300",
-        super: "bg-indigo-500 text-primary-foreground hover:bg-indigo-500/90 border-indigo-600 border-b-4 active:border-b-0",
-        superOutline: "bg-white text-indigo-500 hover:bg-slate-300" ,
-        ghost: "bg-transparent text-slate-500 border-transparent border-0 hover:bg-slate-300",
-        sidebar: "bg-transparent text-slate-500 border-2 border-transparent hover:bg-slate-300 transition-none",
-        sidebarOutline: "bg-sky-500/15 text-sky-500 border-sky-300 border-2 hover:bg-sky-500/20 transition-none"
+        locked: "bg-neutral-700 text-neutral-300 hover:bg-neutral-600 border-neutral-600 border-b-4 active:border-b-0",
+        default: "bg-[#1E1E1E] text-neutral-300 border-neutral-700 border-2 border-b-4 active:border-b-2 hover:bg-neutral-800",
+        primary: "bg-[#7E57C2] text-white hover:bg-[#7E57C2]/90 border-[#6A46B0] border-b-4 active:border-b-0",
+        primaryOutline: "bg-[#1E1E1E] text-[#7E57C2] hover:bg-neutral-800 border-[#7E57C2] border-2",
+        secondary: "bg-[#26A69A] text-white hover:bg-[#26A69A]/90 border-[#1E8E82] border-b-4 active:border-b-0",
+        secondaryOutline: "bg-[#1E1E1E] text-[#26A69A] hover:bg-neutral-800 border-[#26A69A] border-2",
+        danger: "bg-[#EF5350] text-white hover:bg-[#EF5350]/90 border-[#D32F2F] border-b-4 active:border-b-0",
+        dangerOutline: "bg-[#1E1E1E] text-[#EF5350] hover:bg-neutral-800 border-[#EF5350] border-2",
+        super: "bg-[#7B61FF] text-white hover:bg-[#7B61FF]/90 border-[#6A52E5] border-b-4 active:border-b-0",
+        superOutline: "bg-[#1E1E1E] text-[#7B61FF] hover:bg-neutral-800 border-[#7B61FF] border-2",
+        ghost: "bg-transparent text-neutral-300 border-transparent border-0 hover:bg-neutral-800",
+        sidebar: "bg-transparent text-neutral-300 border-2 border-transparent hover:bg-neutral-800 transition-none",
+        sidebarOutline: "bg-[#7E57C2]/15 text-[#7E57C2] border-[#7E57C2]/50 border-2 hover:bg-[#7E57C2]/20 transition-none"
       },
       size: {
         default: "h-11 px-4 py-2 has-[>svg]:px-3",

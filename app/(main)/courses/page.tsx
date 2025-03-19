@@ -14,9 +14,9 @@ const CoursesPage = async () => {
     ])
 
     return ( 
-        <div className="h-full m-w-[912px] px-3 mx-auto">
-            <h1 className="text-2xl font-bold text-neutral-600">
-                Language Courses
+        <div className="h-full m-w-[912px] px-3 mx-auto bg-[#121212] w-full">
+            <h1 className="text-2xl font-bold text-[#9575CD]">
+                Course Library
             </h1>
             <List 
                 courses={courses}

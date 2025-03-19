@@ -24,23 +24,23 @@ const main = async () => {
         await db.insert(schema.courses).values([
             {
                 id: 1,
-                title: "Spanish",
-                imageSrc: "/es.svg"
+                title: "Psychology",
+                imageSrc: "/psychology.svg"
             },
             {
                 id: 2,
-                title: "French",
-                imageSrc: "/it.svg"
+                title: "Mythology",
+                imageSrc: "/mythology.svg"
             },
             {
                 id: 3,
-                title: "Croatian",
-                imageSrc: "/hr.svg"
+                title: "Economics",
+                imageSrc: "/economics.svg"
             },
             {
                 id: 4,
-                title: "Japanese",
-                imageSrc: "/jp.svg"
+                title: "Philosophy",
+                imageSrc: "/philosophy.svg"
             },
         ]);
 
@@ -49,7 +49,7 @@ const main = async () => {
                 id: 1,
                 courseId: 1,
                 title: "Unit 1",
-                description: "Learn the basics of Spanish",
+                description: "Introduction to Psychology",
                 order: 1,
             }
         ]);
@@ -59,31 +59,31 @@ const main = async () => {
                 id: 1,
                 unitId: 1,
                 order: 1,
-                title: "Nouns",
+                title: "The Human Mind",
             },
             {
                 id: 2,
                 unitId: 1,
                 order: 2,
-                title: "Verbs",
+                title: "Cognitive Processes",
             },
             {
                 id: 3,
                 unitId: 1,
                 order: 3,
-                title: "Verbs",
+                title: "Emotional Intelligence",
             },
             {
                 id: 4,
                 unitId: 1,
                 order: 4,
-                title: "Verbs",
+                title: "Behavioral Patterns",
             },
             {
                 id: 5,
                 unitId: 1,
                 order: 5,
-                title: "Verbs",
+                title: "Psychological Disorders",
             },
 
         ]);
@@ -94,7 +94,7 @@ const main = async () => {
                 lessonId: 1,
                 type: "SELECT",
                 order:1,
-                question: 'Which one of these is the "the man"?'
+                question: 'Which of these is associated with "classical conditioning"?'
             },
         ]);
 
@@ -102,26 +102,26 @@ const main = async () => {
             {
                 id: 1,
                 challengeId: 1,
-                imageSrc: "/man.svg",
+                imageSrc: "/pavlov.svg",
                 correct: true,
-                text: "el hombre",
-                audioSrc: "/es_man.mp3"
+                text: "Pavlov's dog experiment",
+                audioSrc: "/pavlov_explanation.mp3"
             },
             {
                 id: 2,
                 challengeId: 1,
-                imageSrc: "/woman.svg",
+                imageSrc: "/freud.svg",
                 correct: false,
-                text: "la mujer",
-                audioSrc: "/es_woman.mp3"
+                text: "Freud's dream analysis",
+                audioSrc: "/freud_explanation.mp3"
             },
             {
                 id: 3,
                 challengeId: 1,
-                imageSrc: "/robot.svg",
+                imageSrc: "/skinner.svg",
                 correct: false,
-                text: "el robot",
-                audioSrc: "/es_robot.mp3"
+                text: "Skinner box",
+                audioSrc: "/skinner_explanation.mp3"
             },
         ]);
 

@@ -30,8 +30,6 @@ export const List = ({ courses,activeCourseId }: Props) => {
                     toast.error("Something went wrong.");
                 });
         });
-           
-        
     }
 
     return(
@@ -44,7 +42,7 @@ export const List = ({ courses,activeCourseId }: Props) => {
                 imageSrc={courses.imageSrc}
                 onClick={onClick}
                 disabled={pending}
-                active={courses.id ===activeCourseId}
+                active={courses.id === activeCourseId}
             />
             ))}
         </div>

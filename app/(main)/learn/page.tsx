@@ -34,7 +34,7 @@ const LearnPage = async () => {
     }
 
     return ( 
-        <div className="flex flex-row-reverse gap-[48px] px-6">
+        <div className="flex flex-row-reverse gap-[48px] px-6 bg-background-base text-white">
             <StickyWrapper>
                 <UserProgress
                     activeCourse={userProgress.activeCourse}

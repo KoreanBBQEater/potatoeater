@@ -5,10 +5,9 @@ type Props = {
     children: React.ReactNode;
 };
 
-
 const MarketingLayout = ({ children }: Props) => {
     return (
-        <div className="min-h-screen flex flex-col">
+        <div className="min-h-screen flex flex-col bg-[#121212] text-[#FFFFFF]">
             <Header />
             <main className="flex-1 flex flex-col items-center justify-center">
                 {children}
@@ -18,4 +17,4 @@ const MarketingLayout = ({ children }: Props) => {
     )
 }
 
-export default MarketingLayout
+export default MarketingLayout;

@@ -20,10 +20,10 @@ export const Header = ({
         <header className="lg:pt-[50px] pt-[20px] px-10 flex gap-x-7 items-center justify-between max-w-[1140px] mx-auto w-full">
             <X 
                 onClick={open}
-                className="text-slate-500 hover:opacity-75 transition cursor-pointer"
+                className="text-neutral-300 hover:text-white hover:opacity-75 transition cursor-pointer"
             />
-            <Progress value={percentage}/>
-            <div className="text-rose-500 flex items-center font-bold">
+            <Progress value={percentage} className="bg-[#303030] [&>div]:bg-[#7E57C2]" />
+            <div className="text-[#EF5350] flex items-center font-bold">
                 <Image
                     src="/heart.svg"
                     height={28}
@@ -32,11 +32,10 @@ export const Header = ({
                     className="mr-2"
                 />
                 {hasActiveSubscription
-                    ?<InfinityIcon className="h-6 w-6 stroke-[3]"/>
-                    :hearts
+                    ? <InfinityIcon className="h-6 w-6 stroke-[3]"/>
+                    : hearts
                 }
             </div>
         </header>
      );
 }
- 
